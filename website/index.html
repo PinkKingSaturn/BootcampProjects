@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+<title>Lifting Weights Survey Form</title>
+</head>
+<body>
+    <div id="background-container">
+    <div id="main">
+        <header>
+            <h1 id="title">Lifting Weights Survey Form</h1>
+            <p id="description">Thank you for taking the time to fill this out - we value your input</p>
+        </header>
+        <div class="grid">
+            <div class="container">
+                <form id="survey-form">
+                    <div class="input">
+                        <label for="name-label" id="name-label">Name</label>
+                        <input type="text" placeholder="Enter your name" id="name" required>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="input">
+                        <label for="email-label" id="email-label">Email</label>
+                        <input type="email" placeholder="Enter your email" id="email" required>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="input">
+                        <label for="number-label" id="number-label">Age</label>
+                        <input type="number" placeholder="Enter your age" min="10" max="100" id="number" required>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="input">
+                        <label for="dropdown">How often do you lift?</label>
+                        <select id="dropdown" required>
+                            <option value="0">I don't lift weights</option>
+                            <option value="1">1-2 times per week</option>
+                            <option value="3">3-4 times per week</option>
+                            <option value="5">5 or more times per week</option>
+                        </select>
+                    </div>
+                    <div class="input-strength-hypertophy">
+                        <p>What are you mainly training for?</p>
+                        <label for="strength" class="radio-button"><input id="strength" type="radio" name="str-hyper" required value="strength">Strength</label>
+                        <label for="str-hyper" class="radio-button"><input id="str-hyper" type="radio" name="str-hyper" required value="str-hyper">Strength + Hypertrophy</label>
+                        <label for="hypertrophy" class="radio-button"><input id="hypertrophy" type="radio" name="str-hyper" required value="hypertrophy">Hypertrophy</label>
+                    </div>
+                    <div class="input-exercise-type">
+                        <p>What type of exercise do you do on a regular basis?</p>
+                        <label for="lifting" class="checkbox"><input id="lifting" type="checkbox" name="exercise-type" value="lifting">Lifting</label>
+                        <label for="running" class="checkbox"><input id="running" type="checkbox" name="exercise-type" value="running">Running</label>
+                        <label for="biking" class="checkbox"><input id="biking" type="checkbox" name="exercise-type" value="biking">Biking</label>
+                        <label for="climbing" class="checkbox"><input id="climbing" type="checkbox" name="exercise-type" value="climbing">Climbing</label>
+                        <label for="plyometrics" class="checkbox"><input id="plyometrics" type="checkbox" name="exercise-type" value="plyometrics">Plyometrics</label>
+                        <label for="yoga" class="checkbox"><input id="yoga" type="checkbox" name="exercise-type" value="yoga">Yoga</label>
+                        <label for="other-cardio" class="checkbox"><input id="other-cardio" type="checkbox" name="exercise-type" value="other-cardio">Other cardio</label>
+                    </div>
+                    <div class="input-textfield">
+                        <label for="comments">Any comments or something you want to add?</label>
+                        <textarea id="comments" placeholder="Enter your comment here"></textarea>
+                    </div>
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>
